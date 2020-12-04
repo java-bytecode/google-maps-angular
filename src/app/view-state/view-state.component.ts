@@ -13,8 +13,6 @@ export class ViewStateComponent implements AfterViewInit {
 
   geocoder = new google.maps.Geocoder();
 
-  defaultDropdownMessage = "Select the state"
-
   states = new Set()
 
   ngAfterViewInit() {
