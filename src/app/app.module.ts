@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewComponent } from './view/view.component';
 import { FormsModule } from '@angular/forms';
+import { ViewStateComponent } from './view-state/view-state.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewComponent
+    ViewComponent,
+    ViewStateComponent
   ],
   imports: [
     BrowserModule,

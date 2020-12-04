@@ -1,0 +1,19 @@
+<!-- <h1>{{ title }}</h1> -->
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<!-- <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onClickedEvent($event)"></agm-map> -->
+
+<p>Enter some address first (Example: 1 Sterling Drive) and press enter. It will populate the states in the dropdownbox.</p>
+
+<form (keydown)="keyDownFunction($event)" style="margin-bottom: 2%;">
+    <label for="address">Address </label>
+<input type="text" name="address" [(ngModel)]="inputAddr" placeholder="Enter a location" style="width: 20%;"/>
+</form>
+
+<label for="statesList">States </label>
+<select name="statesList">
+    <option *ngFor="let state of states" [value]="state">{{state}}</option>
+</select>
+
+<!-- <h1>{{address}}</h1> -->
